@@ -6,7 +6,10 @@ import plotly.graph_objects as go
 import dash_table
 
 import pandas as pd
-from datetime import datetime 
+from datetime import datetime
+import sys
+sys.path.insert(0, '../')
+
 from pages.paginas_1.paginas_1_side_bar import sidebar
 
 #imports de modulo del dashboard

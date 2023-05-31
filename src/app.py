@@ -2,11 +2,13 @@ import dash
 #from dash import Dash, html
 import dash_bootstrap_components as dbc
 from dash import html
+#import sys
+#sys.path.insert(0, '../')
 
-external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
+#external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
-app = dash.Dash(__name__, use_pages=True, external_stylesheets=[dbc.themes.YETI])
-app._favicon = ("favicon_urc.ico")
+app = dash.Dash(__name__, pages_folder = "../pages",use_pages=True, external_stylesheets=[dbc.themes.YETI])
+#app._favicon = ("../favicon_urc.ico")
 header = dbc.Navbar(
     dbc.Container(
         [

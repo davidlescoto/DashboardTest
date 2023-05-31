@@ -7,6 +7,8 @@ import dash_table
 
 import pandas as pd
 from datetime import datetime 
+import sys
+sys.path.insert(0, '../')
 from pages.paginas_1.paginas_1_side_bar import sidebar
 
 #imports de modulo del dashboard
@@ -17,7 +19,7 @@ dash.register_page(__name__)
 
 
 #---- DATA ---------------------------
-DATA_PATH = "data/"
+DATA_PATH = "../data/"
 
 # tipo de cambio
 tipo_cambio = pd.read_excel(DATA_PATH+"precio_dolar.xlsx")
